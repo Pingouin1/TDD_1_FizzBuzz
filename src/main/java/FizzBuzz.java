@@ -11,6 +11,9 @@ public class FizzBuzz {
             result += "Buzz";
         }
 
+        if (result.length() < 1) {
+            result += n;
+        }
         return result;
     }
 }

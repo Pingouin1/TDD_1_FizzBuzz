@@ -7,10 +7,10 @@ public class FizzBuzzTest {
     private final static FizzBuzz fizzBuzz = new FizzBuzz();
 
     @Test
-    public final void should_return_empty_string_if_not_dividable_by_three_or_five() {
+    public final void should_return_number_if_not_dividable_by_three_or_five() {
         int n = 1;
 
-        assertEquals("should return empty string if not dividable by three or five", "", fizzBuzz.fizzBuzz(n));
+        assertEquals("should return empty string if not dividable by three or five", Integer.toString(n), fizzBuzz.fizzBuzz(n));
     }
 
     @Test
